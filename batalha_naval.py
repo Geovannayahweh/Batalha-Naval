@@ -27,7 +27,7 @@ def criar_tabuleiro():
 # Exibe o tabuleiro na tela com um título
 def mostrar_tabuleiro(tabuleiro, titulo):
     print(f"\n--- {titulo.upper()} ---")
-    print("   " + " ".join(f"{indice:2}" for indice in range(TOTAL_COLUNAS)))  # Cabeçalho com números das colunas
+    print("     " + " ".join(f"{indice:2}" for indice in range(TOTAL_COLUNAS)))  # Cabeçalho com números das colunas
     for indice_linha, linha in enumerate(tabuleiro):
         print(f"{indice_linha:2} |", end=" ")  # Índice da linha
         print(" ".join(linha))  # Células da linha
@@ -207,6 +207,7 @@ def iniciar_jogo():
             mostrar_tabuleiro(tabuleiro_jogador_real, "Seu Tabuleiro Final")
             print("\n💀 Você perdeu. O computador venceu.")
             print("🎮 Obrigado por jogar Batalha Naval. Tente novamente e vença na próxima!")
+            print(" Jogo feito por Clara, Geovanna e Luana ")
             return
 
 # Executa o jogo se o script for rodado diretamente
