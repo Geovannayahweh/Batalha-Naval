@@ -200,6 +200,7 @@ def iniciar_jogo():
             if contar_navios_restantes(navios_computador) == 0:
                 print("\n🏆 PARABÉNS! Você venceu a batalha!")
                 print("🎉 Obrigado por jogar Batalha Naval. Até a próxima!")
+                print(" Jogo feito por Clara, Geovanna e Luana ")
                 return
 
         turno_ataque_computador(tabuleiro_jogador_real, navios_jogador)
